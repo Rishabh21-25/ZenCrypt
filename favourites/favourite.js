@@ -68,7 +68,7 @@ const renderCoins = (coinsToDisplay) => {
         </td>
   `;
     row.addEventListener("click", (e) => {
-      window.location.href = `./coins/coin.html?id=${coin.id}`;
+      window.location.href = `../coins/coin.html?id=${coin.id}`;
     });
     row.querySelector(".favorite-icon").addEventListener("click", (e) => {
       e.stopPropagation();

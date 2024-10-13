@@ -21,10 +21,11 @@ nav{
     padding: 0 20px;
 }
 
-.title{
-    color: #26ad98;;
-    font-weight: 700;
-    text-decoration: none;
+.title img{
+    height: 65px;
+    width: 65x;
+    cursor: pointer;
+
 }
 
 .nav-link {
