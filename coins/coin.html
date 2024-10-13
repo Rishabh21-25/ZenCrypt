@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoTracker</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="coin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/42d7ec07ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="left-nav">
+        <a href="/" class="title">Crypto</a>
+      </div>
+      <div class="right-nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="../favourites/favourites.html" class="nav-link">Favourites</a>
+        <div class="search-container">
+          <span class="search-icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+
+          <input type="text" id="search-box" placeholder="search" />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="coin-container" class="container">
+        <section class="sidebar">
+          <img src="" alt="coin-image" id="coin-image" />
+          <h3 class="heading" id="coin-name"></h3>
+          <p id="coin-description" class="description"></p>
+          <div class="market-data">
+            <div class="market-data-item">
+              <div class="heading">Rank:</div>
+              <div id="coin-rank"></div>
+            </div>
+            <div class="market-data-item">
+              <div class="heading">Current Price:</div>
+              <div id="coin-price"></div>
+            </div>
+            <div class="market-data-item">
+              <div class="heading">Market Cap:</div>
+              <div id="coin-market-cap"></div>
+            </div>
+          </div>
+        </section>
+        <section id="chart-section">
+          <div class="button-container">
+            <button id="24h">24h</button>
+            <button id="30d">30d</button>
+            <button id="3m">3m</button>
+          </div>
+          <canvas id="coin-chart"></canvas>
+        </section>
+      </section>
+
+      <section id="loader-container">
+        <section class="loader"></section>
+      </section>
+    </main>
+    <script src="coin.js"></script>
+  </body>
+</html>
