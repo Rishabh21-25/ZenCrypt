@@ -24,10 +24,33 @@ The **Crypto Tracker App** is a web-based application built using HTML, CSS, and
 - **Debounce**: To optimize search operations and reduce unnecessary API requests.
 - **Pagination**: To load data efficiently, enhancing performance.
 
-## Installation
+## Known Issues
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/crypto-tracker-app.git
-   ```
+### Coin Details and Chart Not Loading
+If you encounter issues where the coin details or price charts are not visible upon clicking on a coin, this is due to **CORS policy restrictions** enforced by the CoinGecko API. The API blocks cross-origin requests from GitHub Pages, which causes the data to fail loading.
+
+### Workarounds:
+- **Clone and run locally**: You can clone this repository and run the app locally to bypass the CORS restriction.
+- **CORS Proxy**: For testing, you can use a CORS proxy service to bypass the restriction, but this is not recommended for production.
+
+## Getting Started
+
+To clone and run this project locally:
+
+1. Clone the repo:
+    ```
+    git clone https://github.com/yourusername/crypto-app.git
+    ```
+
+2. Navigate to the project directory:
+    ```
+    cd crypto-app
+    ```
+
+3. Open the `index.html` file in your browser to view the app locally.
+
+## License
+
+This project is licensed under the MIT License.
+  
 # ZenCrypt
